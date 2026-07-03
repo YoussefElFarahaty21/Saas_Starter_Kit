@@ -82,29 +82,16 @@ Ideal for:
 
 ---
 
-## Screenshots
+## Screenshots (Upwork / portfolio)
 
-Portfolio-ready captures live in [`docs/screenshots/`](docs/screenshots/).
+Screenshots are kept **locally only** (not in this GitHub repo) under `docs/screenshots/`.
 
-| Preview | Screen |
-|---------|--------|
-| ![Landing](docs/screenshots/01-landing.png) | Marketing landing page |
-| ![Login](docs/screenshots/02-login.png) | Login |
-| ![Dashboard](docs/screenshots/03-dashboard.png) | Dashboard (dark mode) |
-| ![Billing](docs/screenshots/04-billing.png) | Billing & plans |
-| ![Team](docs/screenshots/05-team.png) | Team members |
-| ![Integrations](docs/screenshots/06-integrations.png) | Integrations |
-| ![API Keys](docs/screenshots/07-api-keys.png) | API keys |
-| ![Profile](docs/screenshots/08-profile.png) | Profile |
-| ![Landing dark](docs/screenshots/01b-landing-dark.png) | Landing (dark mode) |
-| ![Dashboard dark](docs/screenshots/03b-dashboard-dark.png) | Dashboard (dark mode) |
+Suggested gallery shots: landing, login, dashboard (light & dark), billing, team, integrations, API keys, profile.
 
-> Tip for Upwork: upload these images to your project gallery and write a short caption under each (e.g. “Stripe billing UI”, “Team invites”, “Dark mode dashboard”).
-
-To refresh screenshots locally (with the app running):
+With the app running, regenerate them locally:
 
 ```bash
-node scripts/capture-screenshots.mjs
+npm run screenshots
 ```
 
 ---
@@ -116,7 +103,8 @@ SaaS Starter Kit/
 ├── backend/          # Express + TypeScript API
 ├── frontend/         # React (Vite) web app
 ├── mobile/           # React Native screens
-├── docs/screenshots/ # Portfolio images
+├── docs/screenshots/ # Local portfolio images (gitignored)
+├── scripts/          # Local tooling (gitignored)
 ├── firestore.rules
 ├── firestore.indexes.json
 └── package.json      # Root scripts

@@ -107,3 +107,7 @@ temp/
 *.tmp
 *.local.md
 .notes/
+
+# Local portfolio assets (not published to GitHub)
+docs/screenshots/
+scripts/
