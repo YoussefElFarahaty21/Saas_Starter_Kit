@@ -1,0 +1,173 @@
+.webhook-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 100;
+}
+
+.webhook-modal {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.webhook-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.webhook-modal__header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.webhook-modal__close {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.webhook-modal__error {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: var(--danger);
+}
+
+.webhook-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.webhook-modal__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.webhook-modal__input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.webhook-modal__input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.webhook-modal__input--secret {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+}
+
+.webhook-modal__events {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.webhook-modal__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.webhook-modal__checkbox code {
+  font-size: 12px;
+}
+
+.webhook-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.webhook-modal__btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+.webhook-modal__btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.webhook-modal__btn--ghost {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.webhook-modal__btn--primary {
+  background: var(--accent);
+  color: var(--text-inverse);
+}
+
+.webhook-modal__btn--primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.webhook-modal__btn--full {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.webhook-modal__result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.webhook-modal__info {
+  margin: 0;
+  padding: 10px 14px;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--accent-soft-text);
+  font-size: 13px;
+}
+
+.webhook-modal__copy-row {
+  display: flex;
+  gap: 10px;
+}

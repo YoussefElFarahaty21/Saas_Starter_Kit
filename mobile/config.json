@@ -1,0 +1,4 @@
+{
+  "api_url": "http://10.0.2.2:5000",
+  "_note": "Use 10.0.2.2 for Android emulator (maps to host localhost). Use your machine's LAN IP for physical devices or iOS simulator."
+}

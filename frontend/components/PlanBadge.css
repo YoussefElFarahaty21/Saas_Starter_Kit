@@ -1,0 +1,33 @@
+.plan-badge {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+}
+
+.plan-badge--sm {
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+.plan-badge--lg {
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+.plan-badge--free {
+  background: var(--badge-free-bg);
+  color: var(--badge-free-text);
+}
+
+.plan-badge--pro {
+  background: var(--badge-pro-bg);
+  color: var(--badge-pro-text);
+}
+
+.plan-badge--enterprise {
+  background: var(--badge-enterprise-bg);
+  color: var(--badge-enterprise-text);
+}

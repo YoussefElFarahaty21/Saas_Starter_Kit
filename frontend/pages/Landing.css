@@ -1,0 +1,36 @@
+.landing-cta {
+  text-align: center;
+  padding: 64px 24px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color: var(--text-inverse);
+}
+
+@media (min-width: 768px) {
+  .landing-cta {
+    padding: 80px 24px;
+  }
+}
+
+.landing-cta__title {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 800;
+  margin: 0 0 16px;
+}
+
+.landing-cta__text {
+  font-size: 18px;
+  opacity: 0.9;
+  margin: 0 auto 32px;
+  max-width: 480px;
+}
+
+.landing-cta .cta-button--secondary {
+  background: var(--card-bg);
+  color: var(--accent);
+  border-color: var(--card-bg);
+}
+
+.landing-cta .cta-button--secondary:hover {
+  background: var(--bg-secondary);
+  border-color: var(--bg-secondary);
+}

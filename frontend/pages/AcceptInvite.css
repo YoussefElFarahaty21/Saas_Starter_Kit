@@ -1,0 +1,66 @@
+.accept-invite {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-secondary) 100%);
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.accept-invite__card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.accept-invite__brand {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.accept-invite__card h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 12px;
+}
+
+.accept-invite__card p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.accept-invite__link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: var(--text-inverse);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0 6px 8px;
+}
+
+.accept-invite__link:hover {
+  background: var(--accent-hover);
+}
+
+.accept-invite__link--secondary {
+  background: var(--card-bg);
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.accept-invite__link--secondary:hover {
+  background: var(--accent-soft);
+}

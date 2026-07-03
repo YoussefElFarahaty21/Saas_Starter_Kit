@@ -1,0 +1,223 @@
+.integrations-tab__title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+}
+
+.integrations-tab__subtitle {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.integrations-tab__card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.integrations-tab__card h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+}
+
+.integrations-tab__section-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.integrations-tab__muted {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.integrations-tab__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.integrations-tab__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.integrations-tab__input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.integrations-tab__input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.integrations-tab__actions,
+.integrations-tab__row-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.integrations-tab__btn {
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.integrations-tab__btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.integrations-tab__btn--primary {
+  background: var(--accent);
+  color: var(--text-inverse);
+}
+
+.integrations-tab__btn--primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.integrations-tab__btn--ghost {
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.integrations-tab__btn--danger {
+  background: var(--card-bg);
+  color: var(--danger);
+  border: 1px solid var(--danger-border);
+}
+
+.integrations-tab__error,
+.integrations-tab__success {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.integrations-tab__error {
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  color: var(--danger);
+}
+
+.integrations-tab__success {
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success);
+}
+
+.integrations-tab__upgrade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 16px;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, #f5f3ff 100%);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.integrations-tab__upgrade p {
+  margin: 0;
+  color: var(--accent-soft-text);
+  font-size: 14px;
+}
+
+.integrations-tab__table-wrap {
+  overflow-x: auto;
+}
+
+.integrations-tab__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.integrations-tab__table th {
+  text-align: left;
+  padding: 10px 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+.integrations-tab__table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-primary);
+  vertical-align: top;
+}
+
+.integrations-tab__url {
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.integrations-tab__events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.integrations-tab__chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--border);
+  color: var(--text-secondary);
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.integrations-tab__badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.integrations-tab__badge--active {
+  background: #dcfce7;
+  color: var(--success);
+}
+
+.integrations-tab__badge--paused {
+  background: #fef3c7;
+  color: var(--warning);
+}

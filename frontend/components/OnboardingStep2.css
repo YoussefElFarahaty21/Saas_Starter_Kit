@@ -1,0 +1,124 @@
+.onboarding-plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .onboarding-plans {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.onboarding-plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 24px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card-bg);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.onboarding-plan-card:hover:not(:disabled) {
+  border-color: var(--border);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.1);
+}
+
+.onboarding-plan-card:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.onboarding-plan-card--highlight {
+  border: 2px solid var(--accent);
+}
+
+.onboarding-plan-card--selected {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.onboarding-plan-card__badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--text-inverse);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.onboarding-plan-card__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: var(--text-primary);
+}
+
+.onboarding-plan-card__description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0 0 12px;
+}
+
+.onboarding-plan-card__price {
+  margin-bottom: 16px;
+}
+
+.onboarding-plan-card__amount {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.onboarding-plan-card__period {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.onboarding-plan-card__features {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.onboarding-plan-card__features li {
+  font-size: 13px;
+  color: var(--text-primary);
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.onboarding-plan-card__features li span {
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.onboarding-plan-card__cta {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.onboarding-plan-card--highlight .onboarding-plan-card__cta {
+  background: var(--accent);
+  color: var(--text-inverse);
+}

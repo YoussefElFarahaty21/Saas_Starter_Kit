@@ -1,0 +1,20 @@
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.dashboard-layout__body {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-layout__main {
+  flex: 1;
+  padding: 32px;
+  background: var(--bg-secondary);
+  min-height: calc(100vh - 60px);
+  color: var(--text-primary);
+}

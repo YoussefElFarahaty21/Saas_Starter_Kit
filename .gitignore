@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets (never commit)
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Firebase / Google credentials
+*-firebase-adminsdk-*.json
+serviceAccountKey.json
+**/serviceAccount*.json
+**/firebase-adminsdk*.json
+google-services.json
+GoogleService-Info.plist
+*.pem
+
+# Build output
+dist/
+build/
+out/
+backend/dist/
+frontend/dist/
+mobile/dist/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# Test / coverage
+coverage/
+.nyc_output/
+*.lcov
+playwright-report/
+test-results/
+blob-report/
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+.turbo/
+.npm/
+*.pid
+*.seed
+*.pid.lock
+
+# Vite
+frontend/.vite/
+**/.vite/
+
+# React Native / Metro / Android / iOS
+mobile/android/app/build/
+mobile/android/app/.cxx/
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/local.properties
+mobile/android/.idea/
+mobile/ios/build/
+mobile/ios/Pods/
+mobile/ios/Podfile.lock
+mobile/ios/*.xcworkspace
+mobile/ios/DerivedData/
+*.jks
+*.keystore
+*.p8
+*.p12
+*.mobileprovision
+*.orig.*
+.expo/
+.expo-shared/
+*.jsbundle
+metro-cache/
+
+# Stripe CLI / local tooling
+.stripe/
+
+# Temporary / local notes
+tmp/
+temp/
+*.tmp
+*.local.md
+.notes/

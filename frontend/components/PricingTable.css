@@ -1,0 +1,119 @@
+.pricing-table-section {
+  padding: 64px 24px;
+  background: var(--bg-secondary);
+}
+
+@media (min-width: 768px) {
+  .pricing-table-section {
+    padding: 80px 24px;
+  }
+}
+
+.pricing-table-section__title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 32px);
+  font-weight: 800;
+  margin: 0 0 12px;
+  color: var(--text-primary);
+}
+
+.pricing-table-section__subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin: 0 auto 48px;
+  font-size: 16px;
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .pricing-table {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pricing-table__card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  background: var(--card-bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-table__card--highlight {
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.15);
+}
+
+.pricing-table__badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: var(--text-inverse);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.pricing-table__name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.pricing-table__description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.pricing-table__price {
+  margin-bottom: 24px;
+}
+
+.pricing-table__amount {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.pricing-table__period {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.pricing-table__features {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pricing-table__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.pricing-table__check {
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+}

@@ -1,0 +1,55 @@
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+}
+
+.cta-button--primary {
+  background: var(--accent);
+  color: var(--text-inverse);
+  border: 2px solid var(--accent);
+}
+
+.cta-button--primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.cta-button--secondary {
+  background: var(--card-bg);
+  color: var(--text-primary);
+  border: 2px solid var(--border);
+}
+
+.cta-button--secondary:hover {
+  border-color: #cbd5e1;
+  background: var(--bg-secondary);
+}
+
+.cta-button--outline-light {
+  background: transparent;
+  color: var(--card-bg);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.cta-button--outline-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--card-bg);
+}
+
+.cta-button--full {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 14px;
+}

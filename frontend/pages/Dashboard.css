@@ -1,0 +1,120 @@
+.dashboard__header {
+  margin-bottom: 32px;
+}
+
+.dashboard__title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.dashboard__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.dashboard__subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.dashboard__banner {
+  margin-bottom: 24px;
+  padding: 12px 20px;
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--success);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard__banner-warn {
+  color: var(--warning);
+  font-weight: 600;
+}
+
+.dashboard__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.dashboard__stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px var(--shadow);
+}
+
+.dashboard__stat-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.dashboard__stat-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.dashboard__stat-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.dashboard__upgrade {
+  padding: 24px 28px;
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--gradient-end) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dashboard__upgrade h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-soft-text);
+  margin: 0 0 4px;
+}
+
+.dashboard__upgrade p {
+  font-size: 14px;
+  color: var(--accent-soft-text);
+  margin: 0;
+}
+
+.dashboard__upgrade-btn {
+  padding: 10px 24px;
+  background: var(--accent);
+  color: var(--text-inverse);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.dashboard__upgrade-btn:hover {
+  background: var(--accent-hover);
+}
+
+.dashboard__skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,112 @@
+.onboarding-step {
+  width: 100%;
+}
+
+.onboarding-step__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.onboarding-step__subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0 0 28px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.onboarding-step__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.onboarding-step__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.onboarding-step__input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.onboarding-step__input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.onboarding-step__button {
+  padding: 12px;
+  background: var(--accent);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.onboarding-step__button:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.onboarding-step__button:disabled {
+  background: #a5b4fc;
+  cursor: default;
+}
+
+.onboarding-step__error {
+  padding: 10px 14px;
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-border);
+  border-radius: 8px;
+  color: var(--danger);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.onboarding-step__success {
+  padding: 10px 14px;
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  border-radius: 8px;
+  color: var(--success);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.onboarding-step__link-button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.onboarding-step__link-button:hover {
+  text-decoration: underline;
+}
+
+.onboarding-step__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
